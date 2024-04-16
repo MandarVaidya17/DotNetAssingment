@@ -5,11 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject></StartupObject>
+    <StartupObject>LabAssignment.AtoZ</StartupObject>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="LabAssingments\" />
-  </ItemGroup>
 
 </Project>

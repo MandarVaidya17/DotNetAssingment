@@ -63,7 +63,7 @@ Employee1 e1 = new Manager(102, "Sangar", 2003, 4000, 600, 800);
 e1.CalculateSalary();
 Console.WriteLine(e1.Display());
 
-//*/
+//
 
 Circle c1=new Circle(5);
 c1.CalculateArea();
@@ -71,4 +71,4 @@ Console.WriteLine(c1.Print());
 
 Rectangle r1 = new Rectangle(5,5);
 r1.CalculateArea();
-Console.WriteLine(r1.Print());
+Console.WriteLine(r1.Print());*/
