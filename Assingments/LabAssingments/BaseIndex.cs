@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//11.	WAP to accept base and index from user and calculates power
 namespace LabAssignment
 {
     internal class BaseIndex
@@ -11,7 +11,7 @@ namespace LabAssignment
         static void Power(int b,int i)
         {
             int power=1;
-            for(int j = 1; j <= i; i++)
+            for(int j = 1; j <= i; j++)
             {
             power=power*b;
             }

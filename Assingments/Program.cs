@@ -71,4 +71,81 @@ Console.WriteLine(c1.Print());
 
 Rectangle r1 = new Rectangle(5,5);
 r1.CalculateArea();
-Console.WriteLine(r1.Print());*/
+Console.WriteLine(r1.Print());
+
+
+int[] arr1 = new int[] { 90, 89, 78, 54, 1 };
+int[] arr2 = new int[3];
+
+foreach(int item in arr1)
+{
+    Console.WriteLine(item);
+}
+
+Array.Sort(arr1);
+Console.WriteLine("-----after sort-------");
+foreach(int item in arr1)
+{
+    Console.WriteLine(item);
+}
+
+Array.Reverse(arr1);
+Console.WriteLine("------After reverse-----");
+foreach(int item in arr1)
+{
+    Console.WriteLine(item);
+}
+Array.Copy(arr1, 2, arr2, 0, 3);
+Console.WriteLine("copy array");
+    foreach(int item in arr2)
+{
+    Console.WriteLine(item);
+}
+
+Array.Clear(arr1,0,3);
+Console.WriteLine("Clear array");
+foreach (int item in arr1)
+{
+    Console.WriteLine(item);
+}
+
+
+String[] name = new string[] { "Pablo", "Mandar", "Pooja", "Sagar" };
+string[] name1 = new string[3];
+foreach (string n in name)
+{
+    Console.WriteLine(n);
+}
+
+Array.Sort(name);
+Console.WriteLine("After sort");
+foreach (string n in name)
+{
+    Console.WriteLine(n);
+}
+
+Array.Reverse(name);
+Console.WriteLine("After reverse");
+foreach (string n in name)
+{
+    Console.WriteLine(n);
+}
+
+Array.Copy(name, 1, name1, 0, 3);
+Console.WriteLine("After copy");
+foreach (string n in name1)
+{
+    Console.WriteLine(n);
+}
+
+int[,] arr=new int[2,3];
+Console.WriteLine("Enter arr");
+for(int i=0; i<arr.GetLength(0); i++)
+{
+    for(int j=0; j < arr.GetLength(1);j++)
+    arr[i,j] = Convert.ToInt32(Console.ReadLine());
+}*/
+
+
+
+

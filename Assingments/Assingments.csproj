@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LabAssignment.AtoZ</StartupObject>
+    <StartupObject>Assingments.SearchInArray</StartupObject>
   </PropertyGroup>
 
 </Project>
