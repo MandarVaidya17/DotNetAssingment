@@ -8,21 +8,29 @@ namespace Assingments
 {
     public class SearchInArray
     {
-        public void SearchEle(string[] arr,string element)
+        public bool SearchEle(string[] arr,string element)
         {
             for(int i = 0; i < arr.Length; i++)
             {
                 if (element == arr[i])
                 {
-                    Console.WriteLine(element + " is available in array position " + i);
+                    return true;
                 }
             }
+            return false;
         }
         static void Main(string[] args)
         {
             string[] name = { "Pablo", "Amar", "Sagar", "Aish", "Sandesh" };   
             SearchInArray obj= new SearchInArray();
-            obj.SearchEle(name, "Amar");
+           if( obj.SearchEle(name, "Amar"))
+            {
+                Console.WriteLine("Element is in array");
+
+            }else
+            {
+                Console.WriteLine("Element is not in array");
+            }
         }
     }
 }
