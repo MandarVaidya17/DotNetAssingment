@@ -1,4 +1,6 @@
 ﻿using Assingments;
+using Assingments.LabAssingments;
+using System.Collections;
 
 //main method os declare by default by program
 //declare object
@@ -144,8 +146,60 @@ for(int i=0; i<arr.GetLength(0); i++)
 {
     for(int j=0; j < arr.GetLength(1);j++)
     arr[i,j] = Convert.ToInt32(Console.ReadLine());
-}*/
+}
+
+Hashtable h1 = new Hashtable();
+h1.Add(99,"Pablo");
+h1.Add(98, "Sandesh");
+h1.Add(97, "Amar");
+
+h1.Remove(97);
+
+foreach(DictionaryEntry i in h1)
+{
+    Console.WriteLine($"{i.Key} =  {i.Value}");
+}
+
+Console.WriteLine("Sorted list");
+
+SortedList sl= new SortedList();
+sl.Add(99,"Pablo");
+sl.Add(98, "Sandesh");
+sl.Add(97, "Sanket");
+sl.Add(94, "Pranay");
+
+
+foreach(DictionaryEntry i in sl)
+{
+    Console.WriteLine($"{i.Key} =  {i.Value}");
 
 
 
+Person p1= new Person();
+try
+{
+    p1.AcceptName("");
+}
+catch(NameException e)
+{
+    Console.WriteLine(e.Message);
+}
 
+CalclulatorDemo c1=new CalclulatorDemo();
+MyDelegate obj = new MyDelegate(c1.Add);
+obj += new MyDelegate(c1.Sub);
+obj += new MyDelegate(c1.Mul);
+//remove method from invocation list
+obj -= new MyDelegate(c1.Sub);
+
+Delegate[] list=obj.GetInvocationList();
+
+
+foreach(Delegate item in list)
+{
+    Console.WriteLine(item.Method);
+    Console.WriteLine(item.DynamicInvoke(4, 3));
+}
+
+
+*/
