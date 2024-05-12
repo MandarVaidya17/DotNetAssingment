@@ -1,6 +1,5 @@
 ﻿using Assingments;
 using Assingments.LabAssingments;
-using System.Collections;
 
 //main method os declare by default by program
 //declare object

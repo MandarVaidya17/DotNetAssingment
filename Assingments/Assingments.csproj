@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Assingments.LabAssingments.ArrayReverse</StartupObject>
+    <StartupObject>Assingments.LabAssingments.StringHighFrequency</StartupObject>
   </PropertyGroup>
 
 </Project>
